@@ -1,0 +1,16 @@
+{
+  "app_name": "BookKeeping",
+  "app_mode": "debug",
+  "app_host": "localhost",
+  "app_port": "8080",
+  "database": {
+    "driver": "mysql",
+    "user": "root",
+    "password": "1123581321",
+    "host": "127.0.0.1",
+    "port": "3306",
+    "db_name": "BookKeeping",
+    "charset": "utf8",
+    "showSQL": true
+  }
+}
