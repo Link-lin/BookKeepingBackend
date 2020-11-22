@@ -31,3 +31,16 @@ func (us *UserService) Login(email string, password string) *model.User {
 
 	return user
 }
+
+func (us *UserService) LogOut(email string, password string) int64{
+	ud := dao.UserDao{Orm: tool.DbEngine}
+
+	user := model.User{
+		Email:    email,
+		Password: password,
+		LoggedIn: true,
+	}
+
+	result := ud.LogOutUser(user)
+	return result
+}
