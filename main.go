@@ -10,25 +10,31 @@ import (
 	"strings"
 )
 
-func main(){
+func main() {
 	cfg, err := tool.ParseConfig("./config/config.json")
-	if err != nil{
+	if err != nil {
 		panic(err.Error())
 	}
 
-	app :=gin.Default()
+	_, err = tool.OrmEngine(cfg)
+	if err != nil {
+		log.Print(err.Error())
+		return
+	}
+
+	app := gin.Default()
 
 	app.Use(Cors())
 
 	registerRouter(app)
 	//login := new(controller.LoginController)
 
-	if err := app.Run(cfg.AppHost+":"+cfg.AppPort); err != nil{
+	if err := app.Run(cfg.AppHost + ":" + cfg.AppPort); err != nil {
 		log.Fatal(err.Error())
 	}
 }
 
-func registerRouter(router *gin.Engine){
+func registerRouter(router *gin.Engine) {
 	new(controller.LoginController).Router(router)
 }
 

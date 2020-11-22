@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5ad8d55-0e3f-4a94-9dc0-bc3bc5ef59ee" name="Default Changelist" comment="" />
+    <list default="true" id="f5ad8d55-0e3f-4a94-9dc0-bc3bc5ef59ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/param/LoginParam.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/UserService.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/CommonResult.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/JsonParse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/loginController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/loginController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/OrmEngine.go" beforeDir="false" afterPath="$PROJECT_DIR$/tool/OrmEngine.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +27,13 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1kU6FwJOiojqahIvgOciamWEHFw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,6 +49,11 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -63,26 +86,38 @@
       <screen x="0" y="35" width="2560" height="1405" />
     </state>
     <state x="1112" y="520" width="324" height="433" key="EnvironmentVariablesDialog/0.35.2560.1405@0.35.2560.1405" timestamp="1605742822985" />
-    <state width="1204" height="360" key="GridCell.Tab.0.bottom" timestamp="1605827635582">
-      <screen x="0" y="35" width="2560" height="1405" />
+    <state width="2484" height="359" key="GridCell.Tab.0.bottom" timestamp="1606013471523">
+      <screen x="3840" y="238" width="2560" height="1440" />
     </state>
     <state width="1204" height="360" key="GridCell.Tab.0.bottom/0.35.2560.1405@0.35.2560.1405" timestamp="1605827635582" />
-    <state width="1204" height="360" key="GridCell.Tab.0.center" timestamp="1605827635582">
-      <screen x="0" y="35" width="2560" height="1405" />
+    <state width="2484" height="359" key="GridCell.Tab.0.bottom/3840.238.2560.1440/0.273.3840.1887@3840.238.2560.1440" timestamp="1606013471523" />
+    <state width="2484" height="359" key="GridCell.Tab.0.center" timestamp="1606013471523">
+      <screen x="3840" y="238" width="2560" height="1440" />
     </state>
     <state width="1204" height="360" key="GridCell.Tab.0.center/0.35.2560.1405@0.35.2560.1405" timestamp="1605827635582" />
-    <state width="1204" height="360" key="GridCell.Tab.0.left" timestamp="1605827635582">
-      <screen x="0" y="35" width="2560" height="1405" />
+    <state width="2484" height="359" key="GridCell.Tab.0.center/3840.238.2560.1440/0.273.3840.1887@3840.238.2560.1440" timestamp="1606013471523" />
+    <state width="2484" height="359" key="GridCell.Tab.0.left" timestamp="1606013471523">
+      <screen x="3840" y="238" width="2560" height="1440" />
     </state>
     <state width="1204" height="360" key="GridCell.Tab.0.left/0.35.2560.1405@0.35.2560.1405" timestamp="1605827635582" />
-    <state width="1204" height="360" key="GridCell.Tab.0.right" timestamp="1605827635582">
-      <screen x="0" y="35" width="2560" height="1405" />
+    <state width="2484" height="359" key="GridCell.Tab.0.left/3840.238.2560.1440/0.273.3840.1887@3840.238.2560.1440" timestamp="1606013471523" />
+    <state width="2484" height="359" key="GridCell.Tab.0.right" timestamp="1606013471523">
+      <screen x="3840" y="238" width="2560" height="1440" />
     </state>
     <state width="1204" height="360" key="GridCell.Tab.0.right/0.35.2560.1405@0.35.2560.1405" timestamp="1605827635582" />
+    <state width="2484" height="359" key="GridCell.Tab.0.right/3840.238.2560.1440/0.273.3840.1887@3840.238.2560.1440" timestamp="1606013471523" />
     <state x="537" y="268" key="SettingsEditor" timestamp="1605743321587">
       <screen x="0" y="35" width="2560" height="1405" />
     </state>
     <state x="537" y="268" key="SettingsEditor/0.35.2560.1405@0.35.2560.1405" timestamp="1605743321587" />
+    <state x="4606" y="595" width="1017" height="761" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606011771832">
+      <screen x="3840" y="238" width="2560" height="1440" />
+    </state>
+    <state x="4606" y="595" width="1017" height="761" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/3840.238.2560.1440/0.273.3840.1887@3840.238.2560.1440" timestamp="1606011771832" />
+    <state x="4678" y="321" width="884" height="1308" key="find.popup" timestamp="1606012239540">
+      <screen x="3840" y="238" width="2560" height="1440" />
+    </state>
+    <state x="4678" y="321" width="884" height="1308" key="find.popup/3840.238.2560.1440/0.273.3840.1887@3840.238.2560.1440" timestamp="1606012239540" />
     <state width="750" height="540" key="javadoc.popup" timestamp="1605912990875">
       <screen x="3840" y="238" width="2560" height="1440" />
     </state>
