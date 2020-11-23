@@ -31,14 +31,14 @@ func (lc *LoginController) LoginUser(context *gin.Context) {
 
 	// Store the password in database
 	us := service.UserService{}
-	user := us.Login(loginParam.Email, loginParam.Password)
-
-	// If the user already logged In
-	if user.LoggedIn == true {
+	user := us.FindUserByEmail(loginParam.Email)
+	if user != nil && user.Loggedin{
 		tool.Success(context, "User Already Logged In")
 		return
 	}
 
+	// If user not already logged in
+	user = us.Login(loginParam.Email, loginParam.Password)
 	if user != nil {
 		tool.Success(context, user)
 		return
