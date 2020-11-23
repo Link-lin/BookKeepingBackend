@@ -32,7 +32,7 @@ func (lc *LoginController) LoginUser(context *gin.Context) {
 	// Store the password in database
 	us := service.UserService{}
 	user := us.FindUserByEmail(loginParam.Email)
-	if user != nil && user.Loggedin{
+	if user != nil && user.Loggedin==1{
 		tool.Success(context, "User Already Logged In")
 		return
 	}
@@ -67,7 +67,7 @@ func (lc *LoginController) LogOutUser(context *gin.Context){
 	us.LogOut(logoutParam.Email, logoutParam.Password)
 	// There is some error
 	ud := dao.UserDao{Orm: tool.DbEngine}
-	re := ud.Query(logoutParam.Email, logoutParam.Email)
+	re := ud.QueryByEmail(logoutParam.Email)
 
 	fmt.Println(re)
 

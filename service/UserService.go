@@ -12,13 +12,7 @@ type UserService struct {
 
 func (us *UserService) Login(email string, password string) *model.User {
 	ud := dao.UserDao{Orm: tool.DbEngine}
-
 	user := ud.Query(email, password)
-
-	fmt.Print("UserService")
-	//fmt.Println(user)
-	fmt.Println("DICKKKKKKKKKKKKKK")
-	fmt.Println(user)
 
 	if user != nil {
 		return user
@@ -29,10 +23,8 @@ func (us *UserService) Login(email string, password string) *model.User {
 	user = &model.User{
 		Email:    email,
 		Password: password,
-		Loggedin: true,
+		Loggedin: 1,
 	}
-
-	fmt.Println("DICKKKKKKKKKKKKKK")
 
 	// Insert user into database
 	ud.InsertMember(*user)
@@ -45,7 +37,6 @@ func (us *UserService) FindUserByEmail(email string) *model.User{
 	ud := dao.UserDao{Orm: tool.DbEngine}
 	user := ud.QueryByEmail(email)
 
-	fmt.Println(user)
 	if user == nil{
 		return nil
 	}
@@ -66,6 +57,7 @@ func (us *UserService) LogOut(email string, password string) int64{
 
 	result := ud.LogOutUser(email)
 
+	fmt.Println(result)
 	fmt.Println(us.FindUserByEmail(email))
 
 	return result
